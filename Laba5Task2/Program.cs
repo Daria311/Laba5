@@ -3,22 +3,8 @@ namespace Laba5prod
 {
     class Program
     {
-        static void Main()
         static void Main(string[] args)
         {
-            string number = Console.ReadLine();
-            CheckNumber(number);
-        }
-        static void CheckNumber(string number)
-        {
-            int summa = 0;
-            if (true)
-            { 
-                foreach (char c in number)
-                {
-                    summa += c - '0';
-                }
-                Console.WriteLine(summa);
             string number = Console.ReadLine().Replace("-", "");
 
             if (CheckNumber(number))
@@ -27,7 +13,6 @@ namespace Laba5prod
             }
             else
             {
-                Console.WriteLine("Некорректно");
                 Console.WriteLine("Некорректные данные!");
             }
         }
